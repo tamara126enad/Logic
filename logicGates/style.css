@@ -1,0 +1,205 @@
+body {
+    background-color: #222222;
+    font-family: 'Ubuntu', sans-serif;
+    width: 60%;
+    height: 50%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.gates{
+    height:48px;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    border:1.5px solid grey;
+    display: flex;
+    justify-content:space-around;
+    font-size: 1.3rem;
+    color: white;
+    text-align:center;
+    border-radius: 5px;
+    margin:5px 0;
+}
+
+.gate{
+    border-radius:5px;
+    margin: 5px 0;
+    padding: 0 5px;
+    transition: 200ms linear;
+    padding:5px;
+}
+
+.gate-engine {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin: 10% auto;
+    border-radius: 5px;
+}
+
+
+.input{
+    height:100%;
+    width:30%;
+    display:flex;
+}
+
+.input-buttons, .output-buttons{
+    height:100%;
+    width:30%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+#input-A, #input-B{
+    height:34px;
+    width:34px;
+    background-color: pink;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    position:relative;
+    left:-3px;
+    transition:150ms linear;
+}
+
+.wires{
+    height:100%;
+    width:70%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.wire{
+    height:5px;
+    width: 100%;
+    background-color: pink;
+    display:flex;
+}
+
+#wireA, #wireB{
+    transition:150ms linear;
+}
+
+.gate-logo{
+    height:100%;
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+
+#gate-logo{
+    height:65%;
+    width:100%;
+    background-color: pink;
+    border-radius: 5px 50% 50% 5px;
+    display: flex;
+    align-items:center;
+ 
+}
+
+#gate-cut{
+    height:100%;
+    width: 40px;
+    background-color:#222222;
+    border-radius: 0px 50% 50% 0px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.gate-circle {
+   height: 20px;
+   width: 20px;
+   background-color: #222222;
+   border:3px solid pink;
+   border-radius: 50%;  
+   position:relative;
+   left:100%;
+}
+
+
+.cut1{
+    position:relative ;
+    top:-17.5px;
+    width:50px;
+}
+
+.cut2{
+    position:relative ;
+    top:17.5px;
+    width:50px;
+}
+
+.output{
+    height:100%;
+    width:30%;
+    display:flex;
+    justify-content:center ;
+    align-items:center;
+}
+
+
+#output{
+    height:35px;
+    width:35px;
+    background-color: pink;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    
+}
+
+
+table{
+    width:100%;
+    color: white;
+    font-size: 1.7rem;
+    text-align:center;
+    border:1.5px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+caption{
+    margin:5px auto;
+}
+
+th{
+    /*border:2px solid grey;
+    border-radius: 5px;*/
+    
+    color: yellow;
+}
+
+td{
+    width:30px;
+    /* border:1.5px solid grey; */
+    border-radius: 5px;
+    /* background-color: #3d3d5c; */
+    padding: 5px 0;
+    transition: 200ms linear;
+}
+
+
+#not-gate-logo{
+    width: 0;
+    height: 0;
+    border-top: 85px solid transparent;
+    border-left: 110px solid pink;
+    border-bottom: 85px solid transparent;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="gates">
+        <div class="gate" onclick="andGate(this.id)"  id="and-gate" style="background-color:grey;">AND</div>
+        <div class="gate" onclick="orGate(this.id)" id="or-gate">OR</div>
+        <div class="gate" onclick="notGate(this.id)" id="not-gate">NOT</div>
+        <div class="gate" onclick="norGate(this.id)" id="nor-gate">NOR</div>
+        <div class="gate" onclick="nandGate(this.id)" id="nand-gate">NAND</div>
+    </div>
+  
+  
+  <div class="gate-engine" id="gate-engine">
+      
+      <div class="input">
+        <div class="input-buttons">
+            <div id="input-A" onclick="inputClickedA(this.id)">A</div>
+            <div id="input-B" onclick="inputClickedB(this.id)">B</div>
+        </div>
+      
+        <div class="wires">
+           <div class="wire" id="wireA"></div>
+           <div class="wire" id="wireB"></div>
+        </div>
+        
+      </div>
+      
+      <div class="gate-logo">
+       <div id="gate-logo">
+        
+           
+       </div>
+      </div>
+      
+      
+      <div class="output">
+          
+        
+        <div class="wires">
+         <div class="wire">
+             
+         </div>
+        </div>
+        
+        <div id="output">C</div>
+        
+        
+      </div>
+  
+      
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ <table id="table">
+     <caption>Truth Table</caption>
+     
+     <tr>
+         <th>A</th>
+         <th>B</th>
+         <th>C</th>
+     </tr>
+     
+     <tr>
+         <td id="bit00" style="background-color:#3d3d5c;">0</td>
+         <td id="bit01" style="background-color:#3d3d5c;">0</td>
+         <td id="bit02" style="background-color:#3d3d5c;">0</td>
+     </tr>
+     
+     <tr>
+         <td id="bit10">0</td>
+         <td id="bit11">1</td>
+         <td id="bit12">0</td>
+     </tr>
+     
+     <tr>
+         <td id="bit20">1</td>
+         <td id="bit21">0</td>
+         <td id="bit22">0</td>
+     </tr>
+     
+     
+     <tr>
+         <td id="bit30">1</td>
+         <td id="bit31">1</td>
+         <td id="bit32">1</td>
+     </tr> 
+     
+    
+ </table> 
+</body>
+</html>
